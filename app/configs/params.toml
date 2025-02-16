@@ -1,0 +1,134 @@
+EXCLUDE_PARAMS = ["EXCLUDE_PARAMS","config_version"]
+config_version="0.0.1"
+
+[elevation]
+name = "--elevation"
+short_name = "-elv"
+help = "File Path for Elevation Data in GeoTIFF Format (.tif)"
+type = "str"
+nargs = "+"
+default = 0
+action = "StitchArgs"
+required = true
+deprecated = false
+dest = "elevation_file_path"
+
+[true_color]
+name = "--color-image"
+short_name = "-img"
+help = "File Path for True Color Data in GeoTIFF Format (.tif)"
+type = "str"
+nargs = "+"
+default = 0
+action = "StitchArgs"    
+required = false
+deprecated = false
+dest = "true_color_file_path"
+
+[bbox]
+name = "--bbox"
+short_name = "-bx"
+help = "Bounding Box/Region of Interest for performing operation on selected area"
+type = "str"
+nargs = "+"
+default = 0
+action = "StitchArgs"
+required = false
+deprecated = false
+dest = "bbox_file_path"
+
+[resolution]
+name = "--resolution"
+short_name = "-res"
+help = "Resolution of video generated as output"
+type = "str"
+nargs = "1"
+default = 0
+action = "StitchArgs"
+required = false
+deprecated = false
+dest = "video_resolution"
+
+[water_color]
+name = "--water-color"
+short_name = "-water"
+help = "Color for Water"
+type = "str"
+nargs = "3"
+default = 0
+action = "StitchArgs"
+required = false
+deprecated = false
+dest = "water_color"
+
+[tui]
+name = "--no-interface"
+short_name = "-no-tui"
+help = "Disable Terminal User Interface"
+type = "bool"
+nargs = "0"
+default = "False"
+action = "StitchArgs"
+required = false
+deprecated = false
+dest = "tui"
+
+[fps]
+name = "--fps"
+short_name = "-fps"
+help = "Video FPS"
+type = "int"
+nargs = "1"
+default = 0
+action = "StitchArgs"
+required = false
+deprecated = false
+dest = "fps"
+
+[wmax]
+name = "--w-max"
+short_name = "-wmax"
+help = "Maximum Water Level"
+type = "int"
+nargs = "1"
+default = 0
+action = "StitchArgs"
+required = false
+deprecated = false
+dest = "water_level_max"
+
+[wmin]
+name = "--w-min"
+short_name = "-wmin"
+help = "Minimum Water Level"
+type = "int"
+nargs = "1"
+default = 0
+action = "StitchArgs"
+required = false
+deprecated = false
+dest = "water_level_min"
+
+[output]
+name = "--outdir"
+short_name = "-out"
+help = "Output Directory"
+type = "str"
+nargs = "1"
+default = 0
+action = "StitchArgs"
+required = false
+deprecated = false
+dest = "output_directory"
+
+[wriseframe]
+name = "--wriseframe"
+short_name = "-wrpf"
+help = "Water Rise Per Frame"
+type = "int"
+nargs = "1"
+default = 0
+action = "StitchArgs"
+required = false
+deprecated = false
+dest = "water_rise_per_frame"

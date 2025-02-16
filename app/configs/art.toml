@@ -1,0 +1,11 @@
+[app]
+title="Static Water Flooding"
+version="0.0.1a"
+name="deep-sea"
+description="Static Water Flooding"
+author="Apleoxero"
+
+[description]
+prog="Static Water Flooding"
+description="Lorem Ipsum Dolor Sit Amet"
+epilog="Lorem Ipsum Dolor Sit Amet"
