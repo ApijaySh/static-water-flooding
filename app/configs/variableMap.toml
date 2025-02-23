@@ -1,0 +1,19 @@
+[mapping]
+show_interface = "tui"
+elevation_file_path = "elevation_file_path"
+image_file_path = "image_file_path"
+bbox_file_path = "bbox_file_path"
+output_directory = "output_directory"
+water_level_max = "water_level_max"
+water_level_min = "water_level_min"
+water_level_rise_per_frame = "water_rise_per_frame"
+water_color = "water_color"
+video_resolution = "video_resolution"
+video_fps = "fps"
+clip_to_bbox = "clip_to_bbox"
+
+[resolution]
+res_8k = ""
+res_4k = ""
+res_2k = ""
+res_1k = ""

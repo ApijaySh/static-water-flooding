@@ -9,7 +9,7 @@ type = "str"
 nargs = "+"
 default = 0
 action = "StitchArgs"
-required = true
+required = false
 deprecated = false
 dest = "elevation_file_path"
 
@@ -23,7 +23,7 @@ default = 0
 action = "StitchArgs"    
 required = false
 deprecated = false
-dest = "true_color_file_path"
+dest = "image_file_path"
 
 [bbox]
 name = "--bbox"
@@ -132,3 +132,15 @@ action = "StitchArgs"
 required = false
 deprecated = false
 dest = "water_rise_per_frame"
+
+[clip_raster]
+name = "--clip-raster"
+short_name = "-clip"
+help = "Clip raster to bounding box"
+type = "bool"
+nargs = "1"
+default = true
+action = "StitchArgs"
+required = false
+deprecated = false
+dest = "clip_to_bbox"
